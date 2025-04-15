@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <script src="./lib/jquery.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script> 
+        <link rel="stylesheet" href="./lib/bootstrap.min.css">
+        <style>
+            #full-area{
+                width: 100%;
+                height: 100vh;
+                overflow: hidden;
+                background-size: cover;
+                user-select: none;
+                background-size: cover;
+                background-position:  center center;
+                background-color: black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center center;      
+                   }
+            #game-area{
+              width: 1024px;
+                height: 600px;
+                position: absolute;
+                top:50%;
+                background-color: transparent;
+                overflow: hidden;
+                border-radius: 3px;
+                left:50%;
+                transform: translate(-50%,-50%) scale(1);
+                overflow: hidden;
+                
+               /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.192);*/
+            }
+            iframe{
+                width: 1024px;
+                height: 600px;
+                overflow: hidden;
+                position: absolute;
+              
+            }
+            
+        </style>
+    </head>
+    <body>
+      
+        <div id="full-area">
+                <div id="game-area">
+               <div id="play-section">
+                <iframe src="./jeu.php" id="iframee" frameborder="0"   scrolling="no"></iframe>
+               </div>
+            </div>
+        </div>
+        <script src="./lib/respo.js"></script>
+        <script src="./index.js"></script>
+    </body>
+</html>
